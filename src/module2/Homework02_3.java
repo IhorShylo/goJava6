@@ -31,7 +31,7 @@ import java.util.Arrays;
  * Output
  * Oww NO
  */
-public class Homework02_2 {
+public class Homework02_3 {
 
     public static void main(String[] args) {
         int[] balances = {1200, 250, 2000, 500, 3200};
