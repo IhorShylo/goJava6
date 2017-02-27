@@ -13,9 +13,9 @@ public class Main {
     public static final BankSystem bankSystem = new BankSystemImpl();
 
     public static void main(String[] args) throws BankBusinessException, BankTransactionException {
-        Bank bankUS = new USBank(1, "USA", Currency.USD, 25000, 5_000_000, 5, 500_000_000);
-        Bank bankEU = new EUBank(2, "Switzerland", Currency.EUR, 50000, 10_000_000, 5, 1_000_000_000);
-        Bank bankChina = new ChinaBank(3, "China", Currency.USD, 10000, 1_000_000, 5, 50_000_000);
+        Bank bankUS = new USBank(1, "USA", Currency.USD, 25, 50, 5, 500_000_000);
+        Bank bankEU = new EUBank(2, "Switzerland", Currency.EUR, 50, 150, 5, 1_000_000_000);
+        Bank bankChina = new ChinaBank(3, "China", Currency.USD, 10, 100, 5, 50_000_000);
 
 
         User user1 = new User(1, "FirstUser", 10_000, 6, "Vodafone", 5_000, bankUS);
