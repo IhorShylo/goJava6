@@ -65,13 +65,10 @@ public class BankSystemImpl implements BankSystem {
 
     @Override
     public void paySalary(User user) throws BankBusinessException {
-        Bank bank = user.getBank();
-        double salary = bank.moneyPaidMonthlyForSalary();
-        long totalCapital = bank.getTotalCapital();
 
-        if (totalCapital < salary) throw new BankBusinessException("Not enough money on bank balance");
-
-        fundUser(user, (int) salary);
+        fundUser(user, user.getSalary());
 
     }
+
+
 }
