@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by Igor on 30.03.2017.
  */
-public class IManageSystemImpl implements IManageSystem<Food> {
+public final class IManageSystemImpl implements IManageSystem<Food> {
 
     private static Map<Food, Double> database = new HashMap<>();
     private static final Double DEFAULT_PRICE = 0.0;
