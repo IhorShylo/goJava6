@@ -4,7 +4,7 @@ package module8;
  * Created by Igor on 30.03.2017.
  */
 public class Food {
-    private int id;
+    private final int id;
     private String name;
     private Country country;
     private int expiration;
